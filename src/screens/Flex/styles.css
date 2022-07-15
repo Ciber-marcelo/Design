@@ -1,0 +1,301 @@
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+ul li a {
+   text-decoration: none;
+}
+
+.container-externo {
+   background-color: #122A57;
+}
+
+.container1 {
+   display: flex;
+   max-width: 992px;
+   min-width: 320px;
+   margin: auto;
+   width: 100%;
+   justify-content: space-between;
+   color: #fff;
+   height: 100px;
+   align-items: center;
+}
+
+.container2 {
+   display: flex;
+   max-width: 992px;
+   min-width: 320px;
+   margin: auto;
+   width: 100%;
+   /* "vh" vem de viewport, "100vh" é igual a "100%" da pagina total.  */
+   /* height: 100vh; */
+   margin-bottom: 45px;
+   margin-top: 45px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.container3 {
+   display: flex;
+   max-width: 992px;
+   min-width: 320px;
+   margin: auto;
+   width: 100%;
+   margin-bottom: 45px;
+   margin-top: 45px;
+   align-items: center;
+   flex-direction: row-reverse;
+}
+
+.container3 h2 {
+   font-size: 32px;
+   color: #122A57;
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+/* Pesquise por "css marker" caso precise tirar duvidas sobre a parte "h2::before" */
+.container3 h2::before {
+   content: "";
+   height: 50px;
+   width: 5px;
+   margin-right: 5px;
+   background-color: #122A57;
+   position: relative;
+}
+
+.container3 p {
+   margin-bottom: 10px;
+   width: 90%;
+}
+
+.container4 {
+   display: flex;
+   max-width: 992px;
+   min-width: 320px;
+   margin: auto;
+   width: 100%;
+   flex-direction: column;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.container4 h2 {
+   color: #fff;
+   font-size: 32px;
+   margin-bottom: 50px;
+}
+
+.container5 {
+   display: flex;
+   max-width: 992px;
+   min-width: 320px;
+   margin: auto;
+   width: 100%;
+   flex-direction: column;
+   padding-top: 50px;
+   padding-bottom: 100px;
+}
+
+.container5 h2 {
+   font-size: 32px;
+}
+
+.list-items {
+   display: flex;
+   max-width: 260px;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.list-items a {
+   color: #fff;
+}
+
+/* o "h1" depois de ".title" serve para que estilização afete só a tag h1 dentro da classe title */
+.title h1 {
+   color: #122A57;
+   font-size: 48px;
+   margin-bottom: 10px;
+}
+
+.button {
+   background-color: #122A57;
+   color: #fff;
+   text-align: center;
+   border-radius: 30px;
+   width: 220px;
+   height: 50px;
+   display: block;
+   text-decoration: none;
+   line-height: 50px;
+   margin-top: 30px;
+}
+
+.button2 {
+   background-color: #fff;
+   color: #122A57;
+   text-align: center;
+   border-radius: 30px;
+   width: 220px;
+   height: 50px;
+   display: block;
+   text-decoration: none;
+   line-height: 50px;
+   margin-top: 30px;
+}
+
+.list-servicos {
+   display: flex;
+   justify-content: space-between;
+}
+
+.item-servico {
+   text-align: center;
+}
+
+.item-servico p {
+   font-weight: 700;
+   font-size: 18px;
+   color: #fff;
+   margin-top: 20px;
+   width: 220px;
+}
+
+.list-planos {
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+}
+
+.item-plano {
+   flex: 1;
+   border: 5px solid #122A57;
+   padding: 20px;
+   max-width: 240px;
+}
+
+.item-plano h3 {
+   font-size: 24px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-top: 20px;
+}
+
+.item-plano h3::after {
+   content: "";
+   background-color: #122A57;
+   width: 100%;
+   height: 3px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.item-plano li {
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+}
+
+.item-plano ul li::before {
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-color: #122A57;
+   margin-right: 5px;
+}
+
+.item-plano .button {
+   margin: auto;
+   margin-bottom: 20px;
+   margin-top: 30px;
+}
+
+.footer {
+   display: flex;
+   max-width: 992px;
+   min-width: 320px;
+   margin: auto;
+   width: 100%;
+   justify-content: space-between;
+   color: #fff;
+   height: 70px;
+   align-items: center;
+}
+
+/********************************* MOBILE *********************************/
+@media(max-width: 992px) {
+   img {
+      width: 100%;
+      display: flex;
+      margin: auto;
+   }
+
+   .container1 {
+      flex-direction: column;
+      display: flex;
+      justify-content: space-around;
+   }
+
+   .container2 {
+      flex-direction: column;
+      display: flex;
+      margin: auto;
+      width: 80%;
+      margin-top: 10%;
+   }
+
+   .container2 img {
+      margin-top: 10%;
+   }
+
+   .container3 {
+      flex-direction: column;
+      display: flex;
+      margin: auto;
+      width: 80%;
+      margin-top: 20%;
+      margin-bottom: 10%;
+   }
+
+   .container4 {
+      flex-direction: column;
+      width: 80%;
+      align-items: center;
+   }
+
+   .list-servicos {
+      flex-direction: column;
+      margin: auto;
+   }
+
+   .item-servico {
+      margin-top: 10%;
+      margin-bottom: 10%;
+   }
+
+   .container5 {
+      width: 80%;
+      align-items: center;
+   }
+
+   .list-planos {
+      flex-direction: column;
+   }
+
+   .item-plano {
+      margin: auto;
+      margin-top: 10%;
+   }
+
+   .footer {
+      display: flex;
+      width: 80%;
+   }
+}

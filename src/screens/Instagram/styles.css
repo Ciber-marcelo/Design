@@ -1,0 +1,152 @@
+*{
+   box-sizing: border-box;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.container{
+   width: 100%;
+   min-height: 100vh;
+   background-color: rgb(243,243,243);
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+
+.wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   width: 60%;
+   height: 100vh;
+}
+
+.phone{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+}
+
+.phone img{
+   height: 50%;
+}
+
+.continue{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+   width: 50%;
+   /* o "rem" de "34rem" é usado para as fonts/letras */
+   min-height: 34rem;
+}
+
+.group{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   background-color: #fff;
+   width: 100%;
+   /* o primeiro numero é para cime/baixo e o segundo paras esquerda/direita */
+   padding: 1.3rem 0;
+   border: 1px solid lightgray;
+}
+
+/* o ":nth-child()" é usado para mexer dentro de uma tag que está dentro de outra tag, neste caso a tag "group" */
+/* o numero "(1)" significa que a tag modificada será a primeira tag dentro da tag "group" */
+.group:nth-child(1){
+   min-height: 19rem;
+}
+
+.logo{
+   height: 3rem;
+}
+
+.foto{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.foto img{
+   height: 6rem;
+}
+
+.login{
+   background-color: #0095F6;
+   color: #fff;
+   padding: 8px;
+   border-radius: 4px;
+}
+
+.logout{
+   color: #0095F6;
+   margin-top: 1rem;
+}
+
+.not-account{
+   color: rgb(160, 160, 160);
+}
+
+.link-blue{
+   color: #0095F6;
+}
+
+.get-the-app{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding: 1.3rem 0;
+}
+
+.downloads{
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 1rem;
+}
+
+.app-download{
+   height: 3rem;
+   width: 10rem;
+   background-size: cover;
+}
+
+/********************************* TABLET *********************************/
+@media(max-width: 1024px) {
+   .wrapper{
+      width: 90%;  
+   }
+}
+
+/********************************* MOBILE *********************************/
+@media(max-width: 650px) {
+   .container{
+      background-color: #fff;
+   }
+
+   .wrapper{
+      width: 90%;  
+   }
+
+   .phone{
+      display: none;
+   }
+
+   .continue{
+      width: 100%;
+   }
+
+   .group{
+      border: 1px solid transparent;
+   }
+}
+   
