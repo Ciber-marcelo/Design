@@ -10,6 +10,7 @@ import store from '../../assets/Instagram-Images/appStore.png';
 function Instagram() {
    return (
       <div className='container'>
+         
          <div className='wrapper'>
             <div className='phone'>
                <img src={phone} alt="celular" />
