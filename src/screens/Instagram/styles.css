@@ -4,10 +4,20 @@
    font-size: 14px;
 }
 
-.container{
+.background{
+   background-color: rgb(243,243,243);
    width: 100%;
    min-height: 100vh;
-   background-color: rgb(243,243,243);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+.container{
+   width: 100%;
+   min-height: 630px;
+   /* min-height: 100vh; */
    margin: 0;
    padding: 0;
    display: flex;
@@ -18,8 +28,8 @@
    display: flex;
    align-items: center;
    justify-content: flex-start;
-   width: 60%;
-   height: 100vh;
+   width: 785px;
+   /* height: 100vh; */
 }
 
 .phone{
@@ -30,7 +40,46 @@
 }
 
 .phone img{
-   height: 50%;
+   position: absolute;
+   height: 580px;
+}
+
+.tela1 {
+   opacity: 0;
+   /* é preciso declarar um nome para animação com "animation-name" */
+   animation-name: animacao;
+   animation-duration: 15s;
+   /* "animation-iteration-count" efine quantas vezes a animação será repetida, neste caso infinitamente. */
+   animation-iteration-count: infinite;
+}
+
+.tela2 {
+   opacity: 0;
+   animation-name: animacao;
+   animation-duration: 15s;
+   animation-iteration-count: infinite;
+   /* usado para atrasar o inicio da animação, neste caso em 5 segundos */
+   animation-delay: 5s;
+}
+
+.tela3 {
+   opacity: 0;
+   animation-name: animacao;
+   animation-duration: 15s;
+   animation-iteration-count: infinite;
+   /* usado para atrasar o inicio da animação, neste caso em 5 segundos */
+   animation-delay: 10s;
+}
+
+/* vc define como será a animação usando "@keyframes NomeDaAnimação" */
+/* as porcentagens se referem ao momento da animação, por exemplo 50% se refere a oq acontecera quando a animação chegar na metade dela */
+@keyframes animacao{
+   33%{
+      opacity: 1;
+   }
+   66%{
+      opacity: 0;
+   }
 }
 
 .continue{
@@ -49,7 +98,8 @@
    align-items: center;
    flex-direction: column;
    background-color: #fff;
-   width: 100%;
+   width: 350px;
+   /* max-width: 350px; */
    /* o primeiro numero é para cime/baixo e o segundo paras esquerda/direita */
    padding: 1.3rem 0;
    border: 1px solid lightgray;
@@ -103,12 +153,13 @@
    align-items: center;
    justify-content: center;
    width: 100%;
-   padding: 1.3rem 0;
+   /* padding: 1.3rem 0; */
 }
 
 .downloads{
    display: flex;
    width: 100%;
+   max-width: 350px;
    justify-content: space-evenly;
    align-items: center;
    padding: 1rem;
@@ -120,15 +171,44 @@
    background-size: cover;
 }
 
+.footer {
+   display: flex;
+   max-width: 370px;
+   min-width: 320px;
+   margin: auto;
+   width: 100%;
+   justify-content: space-around;
+   color: rgb(160, 160, 160);
+   height: 70px;
+   align-items: center;
+   background-color: rgb(243,243,243);
+}
+
 /********************************* TABLET *********************************/
 @media(max-width: 1024px) {
    .wrapper{
       width: 90%;  
    }
+
+   .phone{
+      display: none;
+   }
+
+   .continue{
+      width: 100%;
+   }
 }
 
 /********************************* MOBILE *********************************/
 @media(max-width: 650px) {
+   .background{
+      background-color: #fff;
+   }
+
+   .footer{
+      background-color: #fff;
+   }
+
    .container{
       background-color: #fff;
    }
