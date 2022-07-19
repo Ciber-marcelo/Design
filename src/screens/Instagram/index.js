@@ -35,9 +35,9 @@ function Instagram() {
                   <div className='group'>
                      <p className='not-account'>Não é marcelones ?</p>
                      <p className='not-account'>
-                        <span className='link-blue'>Alterar contas </span>
+                        <a href='a' className='link-blue'>Alterar contas </a>
                         ou
-                        <span className='link-blue'> Inscreva-se</span>
+                        <a href='a' className='link-blue'> Inscreva-se</a>
                      </p>
                   </div>
 

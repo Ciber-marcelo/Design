@@ -169,6 +169,7 @@
    height: 3rem;
    width: 10rem;
    background-size: cover;
+   cursor: pointer;
 }
 
 .footer {
