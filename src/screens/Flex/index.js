@@ -6,7 +6,7 @@ import icon1 from '../../assets/Flex-Images/icon-1.png';
 import icon2 from '../../assets/Flex-Images/icon-2.png';
 import icon3 from '../../assets/Flex-Images/icon-3.png';
 
-function Flex() {
+export default function Flex() {
    return (
       <div>
          <div className="container-externo">
@@ -29,7 +29,7 @@ function Flex() {
                <a href='#saiba-mais' className='button'>Saiba Mais!</a>
             </div>
 
-            <img src={image1} alt="banner de apresentação" />
+            <img src={image1} className="flex-images" alt="banner de apresentação" />
          </div>
 
          <div className="container3">
@@ -39,7 +39,7 @@ function Flex() {
                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
             </div>
 
-            <img src={image2} alt="balcão de atendimento" />
+            <img src={image2} className="flex-images" alt="balcão de atendimento" />
          </div>
 
          <div className='container-externo'>
@@ -122,4 +122,3 @@ function Flex() {
    );
 }
 
-export default Flex;

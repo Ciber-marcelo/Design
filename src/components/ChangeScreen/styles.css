@@ -1,0 +1,60 @@
+.container-changeScreen {
+   display: flex;
+   width: 180px;
+   background-color: #00BFFF;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 0 0 20px 20px;
+
+   margin-left: 20px;
+   margin-top: -160px;
+   position: absolute;
+
+   animation-name: subir;
+   animation-duration: 60s;
+   animation-play-state:initial;
+}
+
+/* :hover é ativado quando o mouse ficar em cima do container */
+.container-changeScreen:hover {
+   animation-name: descer;
+}
+
+@keyframes descer {
+   2% {
+      transform: translateY(160px);
+   }
+   90% {
+      transform: translateY(160px);
+   }
+}
+@keyframes subir {
+   0% {
+      transform: translateY(160px);
+   }
+   2% {
+      transform: translateY(0px);
+   }
+}
+
+.element-changeScreen {   
+   background-color: #4169E1;
+   width: 150px;
+   height: 50px;
+   border-radius: 30px;
+   text-align: center;
+   line-height: 50px;
+   display: block;
+   margin-top: 20px;
+}
+
+.text-changeScreen {
+   color: white;
+   text-decoration: none;
+}
+
+.seta-changeScreen {
+   width: 50px;
+   height: 40px;
+   margin-top: 20px;
+}

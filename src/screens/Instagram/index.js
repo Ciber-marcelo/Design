@@ -10,7 +10,7 @@ import tela2 from '../../assets/Instagram-Images/perfil2.png';
 import tela3 from '../../assets/Instagram-Images/perfil3.png';
 
 
-function Instagram() {
+export default function Instagram() {
    return (
       <div className='background'>
          <div className='container'>
@@ -53,12 +53,14 @@ function Instagram() {
             </div>
          </div>
 
-         <div className='footer'>
+         <div className='footer-instagram'>
             <p>&copy; 2022 Instagram</p>
-            <p>Desenvolvido por: Marcelones</p>
+            <p>Desenvolvido por: 
+               <a href='https://www.linkedin.com/in/marcelo-meira-7a5564239/' target="_blanck" className='link-blue'> Marcelones</a>
+            </p>
          </div>
       </div>
    );
 }
 
-export default Instagram;
+// export default Instagram;

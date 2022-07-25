@@ -1,9 +1,3 @@
-*{
-   box-sizing: border-box;
-   text-decoration: none;
-   font-size: 14px;
-}
-
 .background{
    background-color: rgb(243,243,243);
    width: 100%;
@@ -103,6 +97,7 @@
    /* o primeiro numero é para cime/baixo e o segundo paras esquerda/direita */
    padding: 1.3rem 0;
    border: 1px solid lightgray;
+   box-sizing: border-box;
 }
 
 /* o ":nth-child()" é usado para mexer dentro de uma tag que está dentro de outra tag, neste caso a tag "group" */
@@ -132,11 +127,15 @@
    color: #fff;
    padding: 8px;
    border-radius: 4px;
+   font-size: 14px;
+   text-decoration: none;
 }
 
 .logout{
    color: #0095F6;
    margin-top: 1rem;
+   font-size: 14px;
+   text-decoration: none;
 }
 
 .not-account{
@@ -145,6 +144,8 @@
 
 .link-blue{
    color: #0095F6;
+   font-size: 14px;
+   text-decoration: none;
 }
 
 .get-the-app{
@@ -154,6 +155,7 @@
    justify-content: center;
    width: 100%;
    /* padding: 1.3rem 0; */
+   font-size: 14px;
 }
 
 .downloads{
@@ -172,7 +174,7 @@
    cursor: pointer;
 }
 
-.footer {
+.footer-instagram {
    display: flex;
    max-width: 370px;
    min-width: 320px;
@@ -183,6 +185,8 @@
    height: 70px;
    align-items: center;
    background-color: rgb(243,243,243);
+   font-size: 14px;
+   text-decoration: none;
 }
 
 /********************************* TABLET *********************************/

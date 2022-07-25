@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import Flex from './screens/Flex';
-import Instagram from './screens/Instagram';
+
+import Rotas from './routes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root.render( 
    <React.StrictMode>
-      <Instagram />
+      <Rotas />
    </React.StrictMode>
 );

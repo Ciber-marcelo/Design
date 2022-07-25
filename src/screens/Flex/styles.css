@@ -1,13 +1,3 @@
-ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-}
-
-ul li a {
-   text-decoration: none;
-}
-
 .container-externo {
    background-color: #122A57;
 }
@@ -111,10 +101,13 @@ ul li a {
    width: 100%;
    justify-content: space-between;
    align-items: center;
+   list-style: none;
 }
 
 .list-items a {
    color: #fff;
+   text-decoration: none;
+   list-style: none;
 }
 
 /* o "h1" depois de ".title" serve para que estilização afete só a tag h1 dentro da classe title */
@@ -231,7 +224,7 @@ ul li a {
 
 /********************************* MOBILE *********************************/
 @media(max-width: 992px) {
-   img {
+   .flex-images {
       width: 100%;
       display: flex;
       margin: auto;
